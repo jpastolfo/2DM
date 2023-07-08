@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentToReturnTo: {fileID: 0}
   changedByDropZone: 0
-  roomPrefab: {fileID: 1293058546324837741, guid: 1d23eeff368711c4080114cba6695569, type: 3}
+  roomPrefab: {fileID: 7246634379550010749, guid: ac44628b71da93b4d9cb2a1e6426b02a, type: 3}
 --- !u!114 &-1002874998951295577
 MonoBehaviour:
   m_ObjectHideFlags: 0
