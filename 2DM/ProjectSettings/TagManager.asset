@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Ground
   - Card
   - Room
   - Hand
+
   layers:
   - Default
   - TransparentFX
