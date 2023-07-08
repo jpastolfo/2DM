@@ -30,7 +30,7 @@ public class HeroMovement : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Space)) {
-            GameObject bullet = Instantiate(bulletPrefab, this.transform);
+            GameObject bullet = Instantiate(bulletPrefab, this.transform.position, this.transform.rotation);
             bullet.GetComponent<bullet>().dir = shootDirection;
         }
         
