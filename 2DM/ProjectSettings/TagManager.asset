@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Card
+  - Room
+  - Hand
+  - Enemy
+  - WinTrigger
+  - GameManager
+  - EnemyBullet
+  - Bullet
+  - DeathTrigger
   layers:
   - Default
   - TransparentFX
@@ -11,8 +21,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Bullet
+  - Player
   - 
   - 
   - 
