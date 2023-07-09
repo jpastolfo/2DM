@@ -13,6 +13,7 @@ TagManager:
   - GameManager
   - EnemyBullet
   - Bullet
+  - DeathTrigger
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,7 @@ public class bullet : MonoBehaviour
     public float fadeRate;
     float fade;
     Rigidbody2D rb;
-    Color spriteColor;
+    [SerializeField]Color spriteColor;
 
     
 
@@ -17,7 +17,7 @@ public class bullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteColor = GetComponent<SpriteRenderer>().color;
+        spriteColor = GetComponentInChildren<SpriteRenderer>().color;
         fade = spriteColor.a;
     }
 
@@ -29,7 +29,7 @@ public class bullet : MonoBehaviour
     void Update()
     {
         fade = Mathf.Clamp(fade - fadeRate * Time.deltaTime,0,255);
-        this.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r,spriteColor.g,spriteColor.b,fade);
+        this.GetComponentInChildren<SpriteRenderer>().color = new Color(spriteColor.r,spriteColor.g,spriteColor.b,fade);
 
         if (fade == 0) {
             Destroy(gameObject);

@@ -31,6 +31,7 @@ public class Skeleton : MonoBehaviour
             canShoot = false;
             timer = reloadTime;
             GameObject bullet = Instantiate(bulletPrefab, this.transform.position, this.transform.rotation);
+            bullet.transform.position = new Vector3(bullet.transform.position.x, bullet.transform.position.y, 0f);
             bullet bulletScript = bullet.GetComponent<bullet>();
             bulletScript.dir = -1f;
             bulletScript.fadeRate /= 3f;

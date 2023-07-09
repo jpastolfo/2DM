@@ -24,4 +24,12 @@ public class PlayerStats : MonoBehaviour
             gm.ShowLoseUI();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "DeathTrigger")
+        {
+            TakeDamage(100);
+        }
+    }
 }
