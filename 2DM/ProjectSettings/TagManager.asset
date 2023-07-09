@@ -11,6 +11,8 @@ TagManager:
   - Enemy
   - WinTrigger
   - GameManager
+  - EnemyBullet
+  - Bullet
   layers:
   - Default
   - TransparentFX

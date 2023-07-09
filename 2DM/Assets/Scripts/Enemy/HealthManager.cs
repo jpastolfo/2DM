@@ -17,4 +17,5 @@ public class HealthManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
 }
