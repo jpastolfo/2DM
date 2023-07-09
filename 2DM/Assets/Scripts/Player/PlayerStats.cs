@@ -5,6 +5,12 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] int health = 1;
+    [SerializeField] GameManager gm;
+    private void Start()
+    {
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
+
     public void TakeDamage(int amount)
     {
         if (health - amount > 0)
@@ -15,7 +21,7 @@ public class PlayerStats : MonoBehaviour
         {
             health = 0;
             this.gameObject.SetActive(false); // Better than destroying Player, so that cinemachine keeps a reference to follow
-            // Show Lose UI
+            gm.ShowLoseUI();
         }
     }
 }

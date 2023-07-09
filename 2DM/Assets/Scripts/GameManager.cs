@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playButton;
     [SerializeField] GameObject hero;
     [SerializeField] GameObject winUI;
+    [SerializeField] GameObject loseUI;
+    [SerializeField] Vector3 initialHeroPosition;
     bool changeCam;
     public int cardsOnRooms;
     [SerializeField] DropZone handScript;
@@ -18,7 +21,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        initialHeroPosition = hero.transform.position;
+        GenerateRandomHand();
     }
 
     // Update is called once per frame
@@ -64,5 +68,32 @@ public class GameManager : MonoBehaviour
         isPlaying = false;
         isOnMenu = true;
         winUI.SetActive(true);
+    }
+
+    public void ShowLoseUI()
+    {
+        isPlaying = false;
+        isOnMenu = true;
+        loseUI.SetActive(true);
+    }
+
+    public void TryAgain()
+    {
+        hero.SetActive(true);
+        hero.GetComponent<PlayerStats>().TakeDamage(-1);
+        hero.transform.position = initialHeroPosition;
+        isPlaying = true;
+        isOnMenu = false;
+        loseUI.SetActive(false);
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    private void GenerateRandomHand()
+    {
+
     }
 }

@@ -38,9 +38,19 @@ public class bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Enemy")
+        if(collision.transform.tag == "Player" && this.tag == "EnemyBullet")
+        {
+            collision.transform.GetComponent<PlayerStats>().TakeDamage(1);
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Enemy" && this.tag == "Bullet")
         {
             collision.transform.GetComponent<HealthManager>().TakeDamage(1);
+            Destroy(this.gameObject);
         }
     }
 }

@@ -46,7 +46,7 @@ public class HeroMovement : MonoBehaviour
         if (other.gameObject.tag == "Ground") {
             canJump = true;
         }
-        if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "EnemyBullet")
+        if(other.gameObject.tag == "Enemy")
         {
             this.GetComponent<PlayerStats>().TakeDamage(1); 
         }
