@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0.46666667}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -95,7 +95,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentToReturnTo: {fileID: 0}
   changedByDropZone: 0
-  roomPrefab: {fileID: 7246634379550010749, guid: ac44628b71da93b4d9cb2a1e6426b02a, type: 3}
+  roomPrefab: {fileID: 8559981513054106412, guid: 6b31237856dae404e80d32d137b3f951, type: 3}
+  layoutElement: {fileID: -1002874998951295577}
 --- !u!114 &-1002874998951295577
 MonoBehaviour:
   m_ObjectHideFlags: 0

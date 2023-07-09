@@ -28,11 +28,21 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
             cardScript.changedByDropZone = true;
             if (this.tag != "Hand")
             {
+                cardScript.layoutElement.preferredWidth = 250;
                 cardScript.HideImage();
                 Camera cam = Camera.main;
                 currentRoomPrefab = Instantiate(cardScript.GetPrefab(), roomWorldPositon.position, this.transform.rotation);
             }
+            if(this.tag == "Hand")
+            {
+                cardScript.layoutElement.preferredWidth = 100;
+            }
         }
+    }
+
+    public int GetMaxCards()
+    {
+        return this.maxCards;
     }
 
     public GameObject GetRoomPrefab()
