@@ -22,6 +22,7 @@ public class PlayerStats : MonoBehaviour
         else
         {
             hm.isAttacking = false;
+            FindObjectOfType<AudioManager>().Play("Death");
             health = 0;
             this.gameObject.SetActive(false); // Better than destroying Player, so that cinemachine keeps a reference to follow
             gm.ShowLoseUI();

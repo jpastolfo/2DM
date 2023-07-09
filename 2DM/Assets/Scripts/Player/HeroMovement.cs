@@ -55,6 +55,7 @@ public class HeroMovement : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.W) && canJump == true && gm.isPlaying) {
+            FindObjectOfType<AudioManager>().Play("Jump");
             canJump = false;
             rb.AddForce(Vector2.up * jumpForce);
         }
@@ -64,6 +65,7 @@ public class HeroMovement : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, this.transform.position, this.transform.rotation);
             bullet.GetComponent<bullet>().dir = shootDirection;
             Destroy(bullet, 0.2f);
+            FindObjectOfType<AudioManager>().Play("Attack");
             animator.SetBool("isAttacking", true);
         }
     }
