@@ -10,7 +10,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public bool changedByDropZone;
     private Image image;
     [SerializeField] private GameObject roomPrefab;
-
+    public LayoutElement layoutElement;
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -30,7 +30,8 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void OnBeginDrag(PointerEventData eventdata)
     {
         Debug.Log("OnBeginDrag");
-        if(image.color.a == 0f)
+        layoutElement.preferredWidth = 100;
+        if (image.color.a == 0f)
             ShowImage();
         parentToReturnTo = this.transform.parent;
         lastRoom = this.transform.parent;
@@ -61,7 +62,11 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         }
 
         if (lastRoom == parentToReturnTo && parentToReturnTo.tag == "Room")
+        {
             HideImage();
+            layoutElement.preferredWidth = 250;
+        }
+
         this.transform.SetParent(parentToReturnTo);
         changedByDropZone = false;
         GetComponent<CanvasGroup>().blocksRaycasts = true;

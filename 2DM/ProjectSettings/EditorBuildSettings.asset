@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0fa7378823b413d4bbf40de3fb7815be
+  - enabled: 1
+    path: Assets/Scenes/DragToRoom.unity
+    guid: 3323a65d71294384f9762adf7fa58a75
   m_configObjects: {}
