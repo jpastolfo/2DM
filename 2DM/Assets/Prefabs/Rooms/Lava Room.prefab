@@ -1637,7 +1637,7 @@ GameObject:
   - component: {fileID: 1569233815558120647}
   m_Layer: 4
   m_Name: Lava
-  m_TagString: Ground
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

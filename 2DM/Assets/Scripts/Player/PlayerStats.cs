@@ -6,9 +6,11 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField] int health = 1;
     [SerializeField] GameManager gm;
+    HeroMovement hm;
     private void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        hm = GetComponent<HeroMovement>();
     }
 
     public void TakeDamage(int amount)
@@ -19,9 +21,18 @@ public class PlayerStats : MonoBehaviour
         }
         else
         {
+            hm.isAttacking = false;
             health = 0;
             this.gameObject.SetActive(false); // Better than destroying Player, so that cinemachine keeps a reference to follow
             gm.ShowLoseUI();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "DeathTrigger")
+        {
+            TakeDamage(100);
         }
     }
 

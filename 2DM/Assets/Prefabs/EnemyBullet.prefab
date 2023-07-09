@@ -72,6 +72,7 @@ MonoBehaviour:
   dir: 0
   fadeRate: 3
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  hasFade: 1
 --- !u!61 &8557846820907550003
 BoxCollider2D:
   m_ObjectHideFlags: 0

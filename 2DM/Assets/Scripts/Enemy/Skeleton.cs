@@ -5,7 +5,7 @@ using UnityEngine;
 public class Skeleton : MonoBehaviour
 {
     public GameObject bulletPrefab;
-    Transform target;
+    [SerializeField]Transform target;
     [SerializeField] float reloadTime = 1f;
     [SerializeField] bool canShoot;
     float timer;

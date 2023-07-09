@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3610422723181545665}
   m_Layer: 0
   m_Name: Saw (10)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.5
 --- !u!1 &3610422723182024277
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 3610422723305882846}
   m_Layer: 0
   m_Name: Saw (11)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -945,7 +945,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.5
 --- !u!1 &3610422723312007970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,7 +1044,7 @@ GameObject:
   - component: {fileID: 3610422723418594291}
   m_Layer: 0
   m_Name: Saw (1)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1148,7 +1148,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.51
 --- !u!1 &3610422723446979333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,7 +1525,7 @@ GameObject:
   - component: {fileID: 3610422723546589741}
   m_Layer: 0
   m_Name: Saw (3)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1629,7 +1629,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.51
 --- !u!1 &3610422723563767810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1896,7 @@ GameObject:
   - component: {fileID: 3610422723768718494}
   m_Layer: 0
   m_Name: Saw (4)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2000,7 +2000,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.51
 --- !u!1 &3610422723807045466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2099,7 @@ GameObject:
   - component: {fileID: 3610422723821252202}
   m_Layer: 0
   m_Name: Saw (6)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2203,7 +2203,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.5
 --- !u!1 &3610422723835273169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,7 +2692,7 @@ GameObject:
   - component: {fileID: 3610422724085623741}
   m_Layer: 0
   m_Name: Saw (9)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2796,7 +2796,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.5
 --- !u!1 &3610422724092159089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,7 +2895,7 @@ GameObject:
   - component: {fileID: 3610422724105105640}
   m_Layer: 0
   m_Name: Saw (2)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2999,7 +2999,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.51
 --- !u!1 &3610422724113267861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,7 +3266,7 @@ GameObject:
   - component: {fileID: 3610422724162843706}
   m_Layer: 0
   m_Name: Saw (7)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3370,7 +3370,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.5
 --- !u!1 &3610422724185957687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5069,7 +5069,7 @@ GameObject:
   - component: {fileID: 3610422724959920183}
   m_Layer: 0
   m_Name: Saw (8)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5173,7 +5173,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.5
 --- !u!1 &3610422724976314134
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,7 +5440,7 @@ GameObject:
   - component: {fileID: 3610422725142392893}
   m_Layer: 0
   m_Name: Saw
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5544,7 +5544,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.54
 --- !u!1 &3610422725147624892
 GameObject:
   m_ObjectHideFlags: 0
@@ -5643,7 +5643,7 @@ GameObject:
   - component: {fileID: 3610422725172797101}
   m_Layer: 0
   m_Name: Saw (5)
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5747,7 +5747,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.625
+  m_Radius: 0.51
 --- !u!1 &3610422725200668760
 GameObject:
   m_ObjectHideFlags: 0

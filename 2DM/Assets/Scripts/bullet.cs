@@ -10,7 +10,7 @@ public class bullet : MonoBehaviour
     float fade;
     Rigidbody2D rb;
     [SerializeField]Color spriteColor;
-
+    [SerializeField] bool hasFade;
     
 
     // Start is called before the first frame update
@@ -31,9 +31,11 @@ public class bullet : MonoBehaviour
         fade = Mathf.Clamp(fade - fadeRate * Time.deltaTime,0,255);
         this.GetComponentInChildren<SpriteRenderer>().color = new Color(spriteColor.r,spriteColor.g,spriteColor.b,fade);
 
-        if (fade == 0) {
+        //*
+        if (fade == 0 && hasFade) {
             Destroy(gameObject);
         }
+        //*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
